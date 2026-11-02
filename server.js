@@ -9,8 +9,8 @@ const server = http.createServer(app);
 const allowedOrigins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://code-sync-rd.vercel.app",
-];
+    process.env.FRONTEND_URL,
+].filter(Boolean);
 
 const io = new Server(server, {
     cors: {
