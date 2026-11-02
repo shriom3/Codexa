@@ -28,7 +28,7 @@ Clone the repository: git clone https://github.com/shriom3/Codexa.git
 
 **Run the development server:** npm run dev
 
-Visit (https://codexa-git-main-shriom-sonis-projects.vercel.app/) to view the app.
+Visit (https://codexa-khaki.vercel.app/) to view the app.
 
 **Usage**
 Start a new room by creating a unique room ID.
