@@ -19,7 +19,8 @@ const EditorPage = () => {
     const [language, setLanguage] = useState("cpp");
     const [userInput, setUserInput] = useState("");
     const [isRunning, setIsRunning] = useState(false);
-    const selectedLanguage = LANGUAGES.find((option) => option.value === language);
+    const selectedLanguage =
+    LANGUAGES.find((option) => option.value === language) || LANGUAGES[0];
 
     useEffect(() => {
         const init = async () => {
@@ -43,7 +44,12 @@ const EditorPage = () => {
                     toast.success(`${username} joined the room.`);
                 }
                 setClients(clients);
-                setLanguage(language);
+                //setLanguage(language);
+                const validLanguage = LANGUAGES.some(
+    (option) => option.value === language
+);
+
+setLanguage(validLanguage ? language : "cpp");
 
                 socketRef.current.emit(ACTIONS.SYNC_CODE, {
                     code: codeRef.current,
