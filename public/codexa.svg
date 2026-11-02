@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" fill="none">
+  <defs>
+    <linearGradient id="mark" x1="10" y1="10" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4aee88"/>
+      <stop offset="1" stop-color="#5a8cff"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="84" height="84" rx="22" fill="url(#mark)"/>
+  <path d="m43 36-14 14 14 14m14-28 14 14-14 14" stroke="#1c1e29" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+  <path d="M75 35v30" stroke="#fff" stroke-linecap="round" stroke-width="6"/>
+  <text x="112" y="70" fill="#fff" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-2">Codexa</text>
+</svg>
